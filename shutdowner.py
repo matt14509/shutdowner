@@ -1,7 +1,6 @@
 import psutil
 import time
 import os
-import subprocess
 dwwdww = 999
 while dwwdww == 999:
 
@@ -36,16 +35,16 @@ while dwwdww == 999:
 
     print("*** Проверяем есть ли процесс ***")
 
-    if checkIfProcessRunning('GTA5'):
-        print('GTA5 работает')
+    if checkIfProcessRunning('GTA5'): #<process name
+        print('работает')
     else:
-        print("GTA5 не работает")
+        print("не работает")
 
 
 
     print("*** Ищем pid процессов ***")
 
-    listOfProcessIds = findProcessIdByName('GTA5')
+    listOfProcessIds = findProcessIdByName('GTA5') #<process name
 
     if len(listOfProcessIds) > 0:
        print('Process Exists | PID and other details are')
