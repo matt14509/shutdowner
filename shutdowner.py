@@ -56,9 +56,7 @@ while dwwdww == 999:
 
     else :
        print('Нету процесса,завершаем работу пк')
-       os.system(['shutdown', '-r' '-t', '0'])
-
-
+       os.system('shutdown -r -t 0')
 
  if __name__ == '__main__':
    main()
